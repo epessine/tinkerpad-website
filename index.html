@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/appicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tinkerpad</title>
+</head>
+
+<body class="flex flex-col gap-7 items-center justify-center h-screen bg-[#D8DEE9]">
+  <div class="w-4/5 xl:w-3/5 relative">
+    <img src="/src/image.png" alt="tinkerpad" class="rounded-lg shadow-lg drop-shadow">
+    <div x-data x-init="tippy($el, { content: 'Always be up-to-date!' })"
+      class="absolute hover:bg-white opacity-20 top-[0.6%] right-[10.4%] h-[2.8%] w-[5.5%] rounded-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Up to 100 snippets history to go back if needed' })"
+      class="absolute hover:bg-white opacity-20 top-[0.6%] right-[6.8%] h-[2.9%] w-[2.5%] rounded-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Save your favorite code snippets for later use!' })"
+      class="absolute hover:bg-white opacity-20 top-[0.6%] right-[3.7%] h-[2.9%] w-[2.5%] rounded-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Customize it with multiple settings and options' })"
+      class="absolute hover:bg-white opacity-20 top-[0.6%] right-[0.6%] h-[2.9%] w-[2.5%] rounded-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Use multiple isolated tabs with separate environments' })"
+      class="absolute hover:bg-white opacity-20 top-[5.3%] left-[25.7%] h-[2.9%] w-[2.4%] rounded-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Run your code and see the output instantly' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[0.4%] h-[4.6%] w-[3.9%] rounded-br-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Switch between vertical and horizontal layout' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[5.0%] h-[4.6%] w-[3.9%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Toggle the output visibility to focus on writing code' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[9.6%] h-[4.6%] w-[3.9%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Inspect the output using VarDumper or as raw text' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[14.3%] h-[4.6%] w-[3.9%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'See the memory usage of your running script for optimizations' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[18.7%] h-[4.8%] w-[8.9%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Benchmark your code and make it faster' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[27.7%] h-[4.8%] w-[10.9%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Run code remotely via SSH connections' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[0.3%] h-[4.8%] w-[4.1%] rounded-bl-md">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Use Docker containers to run your scripts' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[4.8%] h-[4.8%] w-[4.4%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Select any local project to tinker on' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[9.8%] h-[4.8%] w-[12.2%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Inspect the selected project framework version' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[22.6%] h-[4.8%] w-[12.7%]">
+    </div>
+    <div x-data x-init="tippy($el, { content: 'Check out the current project\'s PHP version' })"
+      class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[35.8%] h-[4.8%] w-[8.2%]">
+    </div>
+  </div>
+  <div class="text-[#2E3440] drop-shadow text-center mx-3">Tinkerpad is a lightweight and fast PHP playground that works
+    with Docker and SSH.</div>
+  <div class="">
+    <a href="https://github.com/epessine/tinkerpad/releases/latest"
+      class="border-[#2E3440] border-2 rounded-lg px-5 py-1.5 hover:bg-[#2E3440] hover:text-[#D8DEE9] cursor-pointer transition-all duration-150">Download</a>
+    <a href="https://github.com/epessine/tinkerpad/wiki"
+      class="border-[#2E3440] border-2 rounded-lg px-5 py-1.5 hover:bg-[#2E3440] hover:text-[#D8DEE9] cursor-pointer transition-all duration-150">Docs</a>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
