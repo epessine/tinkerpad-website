@@ -8,9 +8,9 @@
   <title>tinkerpad</title>
 </head>
 
-<body class="flex flex-col gap-7 items-center justify-center h-screen bg-[#D8DEE9]">
-  <div class="w-4/5 xl:w-3/5 relative">
-    <img src="/src/image.png" alt="tinkerpad" class="rounded-lg shadow-lg drop-shadow">
+<body class="flex flex-col gap-7 items-center justify-center h-screen bg-[#616e88]">
+  <div class="w-4/5 xl:w-3/5 relative shadow-lg drop-shadow">
+    <img src="/src/image.png" alt="tinkerpad" class="rounded-lg">
     <div x-data x-init="tippy($el, { content: 'Always be up-to-date!' })"
       class="absolute hover:bg-white opacity-20 top-[0.6%] right-[10.4%] h-[2.8%] w-[5.5%] rounded-md">
     </div>
@@ -24,7 +24,7 @@
       class="absolute hover:bg-white opacity-20 top-[0.6%] right-[0.6%] h-[2.9%] w-[2.5%] rounded-md">
     </div>
     <div x-data x-init="tippy($el, { content: 'Use multiple isolated tabs with separate environments' })"
-      class="absolute hover:bg-white opacity-20 top-[5.3%] left-[25.7%] h-[2.9%] w-[2.4%] rounded-md">
+      class="absolute hover:bg-white opacity-20 top-[4.6%] left-[25%] h-[4.3%] w-[3.7%]">
     </div>
     <div x-data x-init="tippy($el, { content: 'Run your code and see the output instantly' })"
       class="absolute hover:bg-white opacity-20 bottom-[0.4%] right-[0.4%] h-[4.6%] w-[3.9%] rounded-br-md">
@@ -59,8 +59,11 @@
     <div x-data x-init="tippy($el, { content: 'Check out the current project\'s PHP version' })"
       class="absolute hover:bg-white opacity-20 bottom-[0.4%] left-[35.8%] h-[4.8%] w-[8.2%]">
     </div>
+    <div x-data x-init="tippy($el, { content: 'Easily inspect the structured code output' })"
+      class="absolute hover:bg-white opacity-10 top-[10.8%] right-[1.2%] h-[71.5%] w-[47.3%]">
+    </div>
   </div>
-  <div class="text-[#2E3440] drop-shadow text-center mx-3">Tinkerpad is a lightweight and fast PHP playground that works
+  <div class="drop-shadow text-center mx-3">Tinkerpad is a lightweight and fast PHP playground that works
     with Docker and SSH.</div>
   <div class="">
     <a href="https://github.com/epessine/tinkerpad/releases/latest"
